@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -10,7 +11,6 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
-import React, { ReactNode } from 'react'
 
 interface DefaultModalWindowProps {
   titleBtn?: string

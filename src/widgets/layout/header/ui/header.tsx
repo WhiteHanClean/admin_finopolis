@@ -1,5 +1,9 @@
 'use client'
 
+import Image from 'next/image'
+import Link from 'next/link'
+import React, { useState } from 'react'
+import { paths } from '@/shared/config/paths'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -10,10 +14,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { paths } from '@/shared/config/paths'
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useState } from 'react'
 
 export const Header = () => {
   const userEmail = 'user@example.com'

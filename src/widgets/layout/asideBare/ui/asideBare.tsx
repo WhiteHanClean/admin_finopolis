@@ -1,8 +1,8 @@
 'use client'
 
-import { paths } from '@/shared/config/paths'
 import Link from 'next/link'
 import React from 'react'
+import { paths } from '@/shared/config/paths'
 
 export const AsideBare = () => {
   const userEmail = 'user@example.com'

@@ -9,6 +9,7 @@ module.exports = {
   extends: ['eslint:recommended'],
   rules: {
     indent: ['warn', 2],
+    'no-empty-interface': false,
   },
   overrides: [
     // This configuration will apply only to TypeScript files

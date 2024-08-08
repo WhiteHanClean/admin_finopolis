@@ -5,7 +5,6 @@ import React from 'react'
 import { paths } from '@/shared/config/paths'
 
 export const AsideBare = () => {
-  const userEmail = 'user@example.com'
 
   const routes = [
     { name: 'Home', path: paths.home },

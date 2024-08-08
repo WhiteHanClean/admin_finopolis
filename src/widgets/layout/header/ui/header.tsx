@@ -16,7 +16,6 @@ import {
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 
 export const Header = () => {
-  const userEmail = 'user@example.com'
   const [openSheet, setOpenSheet] = useState(false)
 
   const routes = [

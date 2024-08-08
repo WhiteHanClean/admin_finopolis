@@ -9,15 +9,11 @@ export const AsideBare = () => {
 
   const routes = [
     { name: 'Home', path: paths.home },
-    { name: 'Активировать пользователя', path: paths.authActivateUser },
-    { name: 'Восстановить пароль', path: paths.authRecoverPassword },
-    { name: 'Блоги', path: paths.blogs },
-    { name: 'Тур детально', path: paths.tourDetail('example-slug') },
-    { name: 'Профиль', path: paths.profile(userEmail) },
-    { name: 'Уведомления', path: paths.profileNotifications(userEmail) },
-    { name: 'История', path: paths.profileHistory(userEmail) },
-    { name: 'Избранное', path: paths.profileFavorites(userEmail) },
-    { name: 'Настройки', path: paths.profileSettings(userEmail) },
+    { name: 'Программы / Мероприятия', path: paths.events },
+    { name: 'FAQ форум', path: paths.faqForum },
+    { name: 'FAQ моб приложения', path: paths.faqMobForum },
+    { name: 'Пользователи админ части', path: paths.adminUsers },
+    { name: 'Участники + мануальное начисление баллов за игромеханику', path: paths.users },
   ]
 
   return (

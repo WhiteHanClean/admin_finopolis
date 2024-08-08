@@ -22,14 +22,9 @@ export const Header = () => {
   const routes = [
     { name: 'Home', path: paths.home },
     { name: 'Активировать пользователя', path: paths.authActivateUser },
-    { name: 'Восстановить пароль', path: paths.authRecoverPassword },
-    { name: 'Блоги', path: paths.blogs },
-    { name: 'Тур детально', path: paths.tourDetail('example-slug') },
-    { name: 'Профиль', path: paths.profile(userEmail) },
-    { name: 'Уведомления', path: paths.profileNotifications(userEmail) },
-    { name: 'История', path: paths.profileHistory(userEmail) },
-    { name: 'Избранное', path: paths.profileFavorites(userEmail) },
-    { name: 'Настройки', path: paths.profileSettings(userEmail) },
+    { name: 'FAQ для форума ', path: paths.faqForum },
+    { name: 'FAQ для моб', path: paths.faqMobForum },
+  
   ]
 
   return (
@@ -86,22 +81,25 @@ export const Header = () => {
               <div className="ms-3 flex items-center">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="outline" size="icon" className="overflow-hidden rounded-full">
-                      <Image
-                        src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                        width={36}
-                        height={36}
-                        alt="Avatar"
-                        className="overflow-hidden rounded-full"
-                      />
-                    </Button>
+                    <div className="flex items-center justify-between">
+                      <h2 className="mr-4">Arykbaev Ilgiz</h2>
+                      <Button variant="outline" size="icon" className="overflow-hidden rounded-full">
+                        <Image
+                          src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                          width={36}
+                          height={36}
+                          alt="Avatar"
+                          className="overflow-hidden rounded-full"
+                        />
+                      </Button>
+                    </div>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                    <DropdownMenuSeparator />
+                    <DropdownMenuLabel>пользователь фио </DropdownMenuLabel>
 
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Почта</DropdownMenuItem>
                     <DropdownMenuItem>Settings</DropdownMenuItem>
-                    <DropdownMenuItem>Support</DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <Link href="/sign-in">
                       <DropdownMenuItem>Logout</DropdownMenuItem>

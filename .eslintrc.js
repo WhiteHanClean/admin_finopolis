@@ -34,6 +34,8 @@ module.exports = {
       ],
       processor: '@feature-sliced/messages/fs',
       rules: {
+        'react/no-unescaped-entities': 'off',
+        '@next/next/no-page-custom-font': 'off',
         // We will use TypeScript's types for component props instead
         'react/prop-types': 'off',
 

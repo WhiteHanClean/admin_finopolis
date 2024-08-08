@@ -23,7 +23,6 @@ export const Header = () => {
     { name: 'Активировать пользователя', path: paths.authActivateUser },
     { name: 'FAQ для форума ', path: paths.faqForum },
     { name: 'FAQ для моб', path: paths.faqMobForum },
-  
   ]
 
   return (
